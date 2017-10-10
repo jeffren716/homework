@@ -68,7 +68,7 @@ describe Board do
       board.make_move(5, "Erica")
       expect(board.cups[6]).to eq([:stone])
     end
-
+# 
     it "doesn't place stones in the opponent's cup" do
       # not a starting move; assumed to be an automatic move after finishing a play on this cup full of stones
       board.make_move(12, "Erica")
