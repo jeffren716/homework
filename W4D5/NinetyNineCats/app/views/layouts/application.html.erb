@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NinetyNineCats</title>
+</head>
+<body>
+
+<% if current_user.nil? %>
+  <%= link_to "Sign in", new_session_url %> or
+  <%= link_to "Sign up", new_user_url %>
+<% else %>
+  <%= current_user.username %>
+  <%= button_to "Logout", session_url, method: :delete %>
+<% end %>
+
+<%= yield %>
+
+</body>
+<footer>
+  <p>
+    99 Cats is a site that allows you to rent the cats of your dreams.
+    Please feel free to make an account and explore our wide selection of felines.
+  </p>
+
+  <p>
+    <%= yield :footer %>
+  </p>
+</footer>
+</html>
