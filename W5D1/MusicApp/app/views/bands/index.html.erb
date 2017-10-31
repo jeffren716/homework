@@ -1,0 +1,11 @@
+<br><br><br>
+
+<%= button_to "Make a new band", new_band_url, method: :get %>
+
+<h1>Check out all of the bands!</h1>
+  <% @bands = @bands.sort %>
+  <% @bands.each do |band| %>
+  <ul>
+    <%= button_to "#{band.name}", band_url(band), method: :get %>
+  </ul>
+  <% end %>

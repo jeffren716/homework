@@ -1,0 +1,6 @@
+<form class="" action="<%= user_url(:user) %>" method="get">
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+  <p>Your email is: <%= @user.email %></p>
+</form>

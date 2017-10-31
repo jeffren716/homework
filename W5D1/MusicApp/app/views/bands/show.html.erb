@@ -1,0 +1,21 @@
+<h1>Welcome to <%= @band.name %></h1>
+
+<%= render "shared/errors" %>
+
+<form class="" action="<%= edit_band_url(@band) %>" method="get">
+  <input type="hidden" name="_method" value="patch">
+  <input type="hidden"
+  name="authenticity_token"
+  value="<%= form_authenticity_token %>">
+
+  <input type="submit" name="" value="Edit this band">
+</form>
+
+<form class="" action="<%= band_url(@band) %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+
+  <input type="submit" name="" value="Delete this band">
+</form>
