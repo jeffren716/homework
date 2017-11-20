@@ -1,0 +1,24 @@
+.navigation h2 {
+  font-weight: 700;
+}
+
+.navigation button {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 5px 7px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.navigation button:hover {
+  transition-duration: 0.5s;
+  background-color: white;
+}
+
+.footer a {
+  display: flex;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
